@@ -15,8 +15,6 @@ on:
 
 jobs:
   debian_package:
-    permissions:
-      contents: 'true'
     runs-on: ubuntu-24.04
     container:
       image: ubuntu:22.04
