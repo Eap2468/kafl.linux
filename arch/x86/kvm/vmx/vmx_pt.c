@@ -1116,10 +1116,12 @@ static int vmx_pt_check_support(void){
 		return -EIO;
 	}
 
+	/*
 	if ((c & BIT(31))){
 		PRINT_ERROR("IP Payloads are LIP!");
 		return -EIO;
 	}
+ 	*/
 
 	if (!(c & BIT(1))) {
 		PRINT_ERROR("Only one ToPA block supported!");  
